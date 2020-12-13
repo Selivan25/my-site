@@ -46,26 +46,6 @@ body {
   background-image: url("img/icon-phone.svg");
 }
 
-.theme-button {
-  color: #9484f2;
-  border: 1px solid #9484f2;
-}
-
-.theme-button::before {
-  background-image: url("img/sun-normal.svg");
-}
-
-.theme-button:focus,
-.theme-button:hover {
-  color: #17161a;
-  background-color: #9484f2;
-}
-
-.theme-button:focus::before,
-.theme-button:hover::before {
-  background-image: url("img/sun-hover.svg");
-}
-
 .hero-image {
   margin-bottom: 480px;
 }
@@ -99,7 +79,6 @@ body {
 }
 
 .user-image {
-  border-radius: 30%;
   margin: 0 0 32px;
   text-align: center;
 }
