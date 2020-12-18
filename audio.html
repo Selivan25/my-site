@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" media="screen" href="css/reset.css"/>
+    <link rel="stylesheet" media="screen" href="css/mplayer.css"/>
+    <link rel="stylesheet" href="style-audio.css">
+
+    <script type="text/javascript" src="js/snow_light.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="js/mplayer.js"></script>
+</head>
+<body>
+
+<div class="mplayer">
+    <div class="mplayer__front-header">
+        <div class="mplayer__front-header-next-bg"></div>
+        <div class="mplayer__front-header-current-bg"></div>
+        <div class="mplayer__front-btn-playlist"></div>
+        <div class="mplayer__cover-art">
+            <img class="mplayer__cover-art-next" src="#" alt="cover art">
+            <img class="mplayer__cover-art-current" src="#" alt="cover art">
+        </div>
+        <div class="mplayer__toolbar">
+            <div class="mplayer__prev"></div>
+            <div class="mplayer__pause"></div>
+            <div class="mplayer__next"></div>
+        </div>
+        <div class="mplayer__front-body">
+            <div class="mplayer__front-row">
+                <div class="mplayer__front-title-wrap">
+                    <div class="mplayer__front-title-track"></div>
+                    <div class="mplayer__front-title-author"></div>
+                </div>
+            </div>
+            <div class="mplayer__front-row">
+                <div class="mplayer__long">
+                    <div class="mplayer__current-time">0:00</div>
+                    <div class="mplayer__long-slider"></div>
+                    <div class="mplayer__all-time"></div>
+                </div>
+            </div>
+            <div class="mplayer__front-row">
+                <div class="mplayer__order-btn-wrap">
+                    <div class="mplayer__repeat"></div>
+                    <div class="mplayer__random"></div>
+                </div>
+                <div class="mplayer__volume">
+                    <div class="mplayer__volume-icon"></div>
+                    <div class="mplayer__volume-slider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mplayer__playlist ">
+        <div class="mplayer__playlist-header">
+            <div class="mplayer__playlist-btn-front"></div>
+            <div class="mplayer__playlist-header-title">
+                Playlist
+            </div>
+        </div>
+        <div class="mplayer__playlist-body">
+            <div class="mplayer__playlist-body-next-bg"></div>
+            <div class="mplayer__playlist-body-current-bg"></div>
+            <div class="mplayer__playlist-body-inner js-perfect-scrollbar"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+"use strict";
+        $('.mplayer').mplayer({
+            'volume': 80,
+            'playlist': [
+            	{
+                    "title": "Close your eyes",
+                    "author": "Selivan",
+                    "cover": "files/covers.jpg",
+                    "background": "files/background.jpg",
+                    "pfile": "source/audio/Selivan - Close your eyes.mp3",
+                    "duration": "162"
+                },
+                {
+                    "title": "I Will Love You",
+                    "author": "Selivan",
+                    "cover": "files/covers.jpg",
+                    "background": "files/background.jpg",
+                    "pfile": "source/audio/Selivan - I will love you.mp3",
+                    "duration": "153"
+                },
+                {
+                    "title": "In The World",
+                    "author": "Selivan",
+                    "cover": "files/covers.jpg",
+                    "background": "files/background.jpg",
+                    "pfile": "source/audio/Selivan - In the world.mp3",
+                    "duration": "170"
+                },
+                {
+                    "title": "Look To The Sky",
+                    "author": "Selivan",
+                    "cover": "files/covers.jpg",
+                    "background": "files/background.jpg",
+                    "pfile": "source/audio/Selivan - Look to the sky.mp3",
+                    "duration": "114"
+                },
+                {
+                    "title": "No Reason To Be Sad",
+                    "author": "Selivan",
+                    "cover": "files/covers.jpg",
+                    "background": "files/background.jpg",
+                    "pfile": "source/audio/Selivan - No reason to be sad.mp3",
+                    "duration": "243"
+                },
+                {
+                    "title": "Universe",
+                    "author": "Selivan",
+                    "cover": "files/covers.jpg",
+                    "background": "files/background.jpg",
+                    "pfile": "source/audio/Selivan - Universe.mp3",
+                    "duration": "227"
+                },
+                {
+                    "title": "Future House",
+                    "author": "Selivan",
+                    "cover": "files/covers.jpg",
+                    "background": "files/background.jpg",
+                    "pfile": "source/audio/Selivan - Future House.mp3",
+                    "duration": "165"
+                },
+                {
+                    "title": "Orchestra",
+                    "author": "Selivan",
+                    "cover": "files/covers.jpg",
+                    "background": "files/background.jpg",
+                    "pfile": "source/audio/Selivan - Orchestra.mp3",
+                    "duration": "159"
+                },
+                {
+                    "title": "Soul Songs",
+                    "author": "Selivan",
+                    "cover": "files/covers.jpg",
+                    "background": "files/background.jpg",
+                    "pfile": "source/audio/Selivan - Soul Songs.mp3",
+                    "duration": "123"
+                },
+                {
+                    "title": "Run Away",
+                    "author": "Selivan",
+                    "cover": "files/covers.jpg",
+                    "background": "files/background.jpg",
+                    "pfile": "source/audio/Selivan - Run Away.mp3",
+                    "duration": "144"
+                }
+            ]
+        });
+</script>
+</body>
+</html>

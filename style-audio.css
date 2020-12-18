@@ -1,0 +1,16 @@
+body {
+    font-style: italic;
+    background-image: url("files/sekiglat.png");
+    background-size: 1366px 768px;
+}
+
+#snow_light {
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    }
+
